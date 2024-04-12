@@ -1,15 +1,16 @@
 // AboutScreen.js
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import styles from '../screens/style'
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 const AboutScreen = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>About Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
+    <View style={styles.container}>
+      <Text>História do Futsal</Text>
+
+
+
+     
     </View>
   );
 }

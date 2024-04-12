@@ -21,9 +21,9 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeStack} />
-        <Tab.Screen name="About" component={AboutScreens} />
-        <Tab.Screen name="Details" component={DetailsScreens} />
+        <Tab.Screen name="Home" component={HomeStack} options={{headerShown:false}}/>
+        <Tab.Screen name="História" component={AboutScreens} options={{headerShown:false}}/>
+        <Tab.Screen name="Sobre" component={DetailsScreens} options={{headerShown:true}}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

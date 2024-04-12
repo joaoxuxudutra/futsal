@@ -1,19 +1,19 @@
 import React from 'react';
-import { View, Text, Button, Image, Pressable } from 'react-native';
-import {tela} from '../img/tela.png'
+import styles from '../screens/style'
+import { View, Text, Button, Image, Pressable, StyleSheet } from 'react-native';
+import tela from '../img/tela.png'
 
 const HomeScreen = ({ navigation }) => {
 
   return (
-    <View>
-
+    <View style={styles.content}>
     <Image
-        source={tela} style={{ widht:'100%', height:'100%' }}
+        source={tela} style={styles.imagem}
         />
       
       <View>
       <Pressable
-        title="voltar"
+        title=""
         onPress={() => navigation.navigate('About')}
       />
 
